@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8; /* Hafif mavimsi ferah beyaz arka plan */
+            background-color: #f0f4f8; 
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,18 +16,16 @@
             min-height: 100vh;
         }
         .container {
-            background-color: #ffffff; /* Tam beyaz kart arka planı */
+            background-color: #ffffff; 
             padding: 35px 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(12, 66, 110, 0.12); /* Kurumsal mavi tonlu hafif gölge */
+            box-shadow: 0 10px 30px rgba(12, 66, 110, 0.12); 
             text-align: center;
             max-width: 360px;
             width: 90%;
             margin: 20px auto;
-            /* Açılış Animasyonu Tanımı */
             animation: fadeIn 0.8s ease-out;
         }
-        /* Animasyon Kodları */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -39,7 +37,7 @@
             border-radius: 8px;
         }
         h1 {
-            color: #0c426e; /* Kurumsal Koyu Mavi */
+            color: #0c426e; 
             font-size: 24px; 
             margin-bottom: 5px;
             font-weight: 800; 
@@ -89,17 +87,19 @@
         .btn-whatsapp { background-color: #25D366; color: #ffffff; border: 2px solid #25D366; } 
         .btn-mail { background-color: #4b5563; color: #ffffff; border: 2px solid #4b5563; } 
         .btn-maps { background-color: #ffffff; color: #0c426e; border: 2px solid #0c426e; } 
+        .btn-web { background-color: #1e293b; color: #ffffff; border: 2px solid #1e293b; } /* Web sitesi butonu için şık antrasit */
         
         /* Hover Efektleri */
         .btn-call:hover { background-color: #093254; border-color: #093254; }
         .btn-whatsapp:hover { background-color: #1ebe57; border-color: #1ebe57; }
         .btn-mail:hover { background-color: #374151; border-color: #374151; }
         .btn-maps:hover { background-color: #f8fafc; }
+        .btn-web:hover { background-color: #0f172a; border-color: #0f172a; }
         
-        /* PROFESYONEL FOOTER ALANI GÜNCELLEMESİ */
+        /* PROFESYONEL FOOTER ALANI */
         .footer-wrapper {
             margin-top: 30px;
-            border-top: 1px dashed #e1e8ed; /* Hafif, profesyonel kesikli ayırıcı line */
+            border-top: 1px dashed #e1e8ed; 
             padding-top: 15px;
         }
         .legal-footer {
@@ -108,24 +108,20 @@
             font-weight: 500;
             margin-bottom: 3px;
         }
-        /* Yeni Professional Creator Link Stili */
         .creator-tag {
-            font-size: 10px; /* Çok küçük ve zarif */
-            color: #cbd5e1; /* Göze batmayan açık gri tonu */
-            text-decoration: none; /* Alt çizgi yok */
-            transition: color 0.2s ease; /* Renk değişimi animasyonu */
+            font-size: 10px; 
+            color: #cbd5e1; 
+            text-decoration: none; 
+            transition: color 0.2s ease; 
             display: inline-block;
             font-weight: 400;
         }
         .creator-tag span {
-            font-weight: 700; /* CK Plast kısmını kalınlaştır */
-            color: #94a3b8; /* Telif yazısı rengiyle aynı yap */
+            font-weight: 700; 
+            color: #94a3b8; 
         }
-        .creator-tag:hover {
-            color: #0c426e; /* Üzerine gelince kurumsal maviye dönüşür (İnteraktiflik) */
-        }
-        .creator-tag:hover span {
-            color: #0c426e; /* CK Plast yazısı da maviye dönüşür */
+        .creator-tag:hover, .creator-tag:hover span {
+            color: #0c426e; 
         }
     </style>
 </head>
@@ -146,6 +142,10 @@
     <a href="mailto:aslanfiltre@hotmail.com" class="btn btn-mail">✉️ E-posta Gönder</a>
     
     <a href="https://www.google.com/maps/place/Aslan+Filtre/@36.8363885,34.6629683,17z/data=!3m1!4b1!4m6!3m5!1s0x1527f1e570265f9d:0x11097eeca722f213!8m2!3d36.8363885!4d34.6629683!16s%2Fg%2F11s644t_18?hl=tr-TR&entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-maps">🗺️ Yol Tarifi / Konum</a>
+    
+    <div class="section-title">🌐 Dijital Kanallarımız</div>
+    
+    <a href="https://aslanfiltre.com/" target="_blank" class="btn btn-web">Web Sitemiz</a>
     
     <div class="footer-wrapper">
         <div class="legal-footer">© 2026 Aslan Filtre ve Madeni Yağ </div>
