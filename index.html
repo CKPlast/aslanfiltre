@@ -96,30 +96,43 @@
         .btn-mail:hover { background-color: #374151; border-color: #374151; }
         .btn-maps:hover { background-color: #f8fafc; }
         
-        /* Geliştirilmiş Alt Bilgi Alanı */
+        /* PROFESYONEL FOOTER ALANI GÜNCELLEMESİ */
         .footer-wrapper {
             margin-top: 30px;
-            border-top: 1px dashed #e1e8ed;
+            border-top: 1px dashed #e1e8ed; /* Hafif, profesyonel kesikli ayırıcı line */
             padding-top: 15px;
         }
-        .footer-text {
+        .legal-footer {
             font-size: 11px;
             color: #94a3b8;
             font-weight: 500;
-            margin: 2px 0;
+            margin-bottom: 3px;
         }
-        .brand-text {
-            font-size: 10px;
-            color: #64748b;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+        /* Yeni Professional Creator Link Stili */
+        .creator-tag {
+            font-size: 10px; /* Çok küçük ve zarif */
+            color: #cbd5e1; /* Göze batmayan açık gri tonu */
+            text-decoration: none; /* Alt çizgi yok */
+            transition: color 0.2s ease; /* Renk değişimi animasyonu */
+            display: inline-block;
+            font-weight: 400;
+        }
+        .creator-tag span {
+            font-weight: 700; /* CK Plast kısmını kalınlaştır */
+            color: #94a3b8; /* Telif yazısı rengiyle aynı yap */
+        }
+        .creator-tag:hover {
+            color: #0c426e; /* Üzerine gelince kurumsal maviye dönüşür (İnteraktiflik) */
+        }
+        .creator-tag:hover span {
+            color: #0c426e; /* CK Plast yazısı da maviye dönüşür */
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <img src="aslanlogo.png" alt="ASLAN FİLTRE LOGO" class="logo-img">
+    <img src="logo.png" alt="ASLAN FİLTRE LOGO" class="logo-img">
     
     <h1>ASLAN FİLTRE</h1>
     <div class="subtitle">İş Makinaları Filtre ve Yedek Parça<br>San. ve Tic. Ltd. Şti.</div>
@@ -135,8 +148,8 @@
     <a href="https://www.google.com/maps/place/Aslan+Filtre/@36.8363885,34.6629683,17z/data=!3m1!4b1!4m6!3m5!1s0x1527f1e570265f9d:0x11097eeca722f213!8m2!3d36.8363885!4d34.6629683!16s%2Fg%2F11s644t_18?hl=tr-TR&entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-maps">🗺️ Yol Tarifi / Konum</a>
     
     <div class="footer-wrapper">
-        <div class="footer-text">© 2026 Aslan Filtre İş Makinaları</div>
-        <div class="brand-text">Oluşturucu: CK Plast</div>
+        <div class="legal-footer">© 2026 Aslan Filtre İş Makinaları</div>
+        <a href="#" target="_blank" class="creator-tag">Dijital Kart Tasarımı: <span>CK Plast</span></a>
     </div>
 </div>
 
